@@ -29,13 +29,13 @@ const registerPatient = catchAsync(async (req: Request, res: Response) => {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24, // 24 hour or 1 day
+		maxAge: 1000 * 60 * 60 * 24,
 	});
 	res.cookie("refreshToken", refreshToken, {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24 * 7, // 7 days
+		maxAge: 1000 * 60 * 60 * 24 * 7,
 	});
 
 	sendResponse(res, {
@@ -60,13 +60,13 @@ const loginUser = catchAsync(async (req: Request, res: Response) => {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24, // 24 hour or 1 day
+		maxAge: 1000 * 60 * 60 * 24,
 	});
 	res.cookie("refreshToken", refreshToken, {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24 * 7, // 7 days
+		maxAge: 1000 * 60 * 60 * 24 * 7,
 	});
 
 	sendResponse(res, {
@@ -107,13 +107,13 @@ const refreshToken = catchAsync(async (req: Request, res: Response) => {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24, // 24 hour or 1 day
+		maxAge: 1000 * 60 * 60 * 24,
 	});
 	res.cookie("refreshToken", newRefreshToken, {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24 * 7, // 7 days
+		maxAge: 1000 * 60 * 60 * 24 * 7,
 	});
 
 	sendResponse(res, {
@@ -137,13 +137,13 @@ const googleLogin = catchAsync(async (req: Request, res: Response) => {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24, // 24 hour or 1 day
+		maxAge: 1000 * 60 * 60 * 24,
 	});
 	res.cookie("refreshToken", refreshToken, {
 		httpOnly: true,
 		secure: false,
 		sameSite: "none",
-		maxAge: 1000 * 60 * 60 * 24 * 7, // 7 days
+		maxAge: 1000 * 60 * 60 * 24 * 7,
 	});
 
 	sendResponse(res, {
